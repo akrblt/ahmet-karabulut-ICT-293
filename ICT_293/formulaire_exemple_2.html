@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Simple</title>
+</head>
+<body>
+
+    <form action="mailto:votre.adresse@cpnv.ch" method="post">
+        <table>
+            <!-- Nom d'utilisateur -->
+            <tr>
+                <td>Nom d'utilisateur :</td>
+                <td><input type="text" name="username" size="30" required></td>
+            </tr>
+
+            <!-- Mot de passe -->
+            <tr>
+                <td>Mot de passe :</td>
+                <td><input type="password" name="password" size="20" required></td>
+            </tr>
+
+            <!-- Commentaires -->
+            <tr>
+                <td>Commentaires :</td>
+                <td><textarea name="commentaires" rows="4" cols="40"></textarea></td>
+            </tr>
+
+            <!-- Liste de choix -->
+            <tr>
+                <td>Liste de choix :</td>
+                <td>
+                    <select name="choix">
+                        <option value="1">Valeur liste 1</option>
+                        <option value="2" selected>Valeur liste 2</option>
+                        <option value="3">Valeur liste 3</option>
+                        <option value="4">Valeur liste 4</option>
+                        <option value="5">Valeur liste 5</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Liste déroulante -->
+            <tr>
+                <td>Liste déroulante :</td>
+                <td>
+                    <select name="deroulante">
+                        <option value="1" selected>Valeur liste déroulante 1</option>
+                        <option value="2">Valeur liste déroulante 2</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Cases à cocher -->
+            <tr>
+                <td>Cases à cocher :</td>
+                <td>
+                    <input type="checkbox" name="choix1" value="1"> Choix case à cocher 1<br>
+                    <input type="checkbox" name="choix2" value="2"> Choix case à cocher 2<br>
+                    <input type="checkbox" name="choix3" value="3" checked> Choix case à cocher 3<br>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Champ caché -->
+        <input type="hidden" name="subject" value="cachée">
+
+        <!-- Boutons -->
+        <input type="reset" value="Retour à la case départ">
+        <input type="submit" value="Envoyer">
+
+    </form>
+
+</body>
+</html>

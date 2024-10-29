@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Exemple</title>
+    <style>
+        table {
+            margin:auto;
+            width:90%;
+            border-spacing: 20px;
+            border-collapse: separate;
+        }
+        table, td, tr {
+            padding:10px;
+            border:1px solid gray;
+        }
+        h1{
+            text-align: center;
+        }
+	</style>
+</head>
+<body>
+
+    <form action="mailto:ahmet.karabulut@eduvaud.ch" method="post">
+        <table>
+            <!-- Username et password -->
+            <tr>
+                <td>Username
+                 <input type="text" name="username" id="" size="30"><br>
+                Password
+                <input type="password" name="password" id="" size="20"></td>
+<!-- Commentaires -->
+                <td> Commentaires 
+                <textarea name="commentaires" id="" cols="40" rows="4"></textarea> </td>
+            </tr>
+            <!--Choisir une lecon-->
+            <tr>
+                <td>Choisir une lecon
+                 <select name="choix" id="">
+                    <option value="1">ICT-123</option>
+                    <option value="2">MA-100</option>
+                    <option value="3">ICT-293</option>
+                    <option value="4">INI-45</option>
+                    <option value="5">INI-03</option>
+                </select> </td>
+            </tr>
+            <!--Liste déroulant-->
+            <tr>
+                <td>Liste déroulante : 
+                
+                    <select name="deroulante" id="">
+                        <option value="1">Pomme verte</option>
+                        <option value="2">Pomme rouge</option>
+                        <option value="3">Pomme blanche</option>
+                    </select>
+                </td>
+            </tr>
+    
+<tr>
+    <td>
+
+        <label for="liste">Liste deroulante
+            <select name="" id="">
+                <option value="">pomme</option>
+                <option value="">pomme verte</option>
+                <option value="">pomme rouge</option>
+            </select>
+        </label>
+    </td>
+       <br>
+       
+        <td>
+            <label for="couleur">Cases a coocher</label> <br>
+            <input type="checkbox" name="couleur" id="">Rouge <br>
+            <input type="checkbox" name="couleur" id="">Verte <br>
+            <input type="checkbox" name="couleur" id="">Noir  <br>
+    
+        </td>
+        <br>
+    
+        <td>
+            <br>
+    
+            <label for="radio">Vert ou Rouge</label> <br>
+            <input type="radio" name="radio" id="">Rouge <br>
+            <input type="radio" name="radio" id="">Vert <br>
+    
+        </td>
+    
+    <br>
+    <td>
+        <label for="date">Saisir de le date de votre naissance votre </label>
+        <input type="date" name="date" id="">
+    </td>
+  
+</tr>
+       
+    
+
+        </table>
+
+       
+
+
+    </form>
+    
+</body>
+</html>
